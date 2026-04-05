@@ -4,31 +4,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Syahid - Personal Website</title>
+    <title>Syahid Ibrahim - Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
     <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
       body {
-        font-family: sans-serif;
-        max-width: 680px;
-        margin: 60px auto;
-        padding: 0 20px;
+        font-family: 'DM Sans', sans-serif;
+        background: #fafaf9;
         color: #222;
+        min-height: 100vh;
       }
-      h1 { font-size: 2rem; }
-      p { line-height: 1.7; color: #444; }
-      a { color: #0070f3; }
+      .wrap {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 3rem 1.5rem;
+      }
+      nav {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 4rem;
+      }
+      nav a {
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #aaa;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      nav a.active {
+        color: #222;
+        border-bottom: 1px solid #222;
+        padding-bottom: 2px;
+      }
+      h1 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 2.6rem;
+        font-weight: 400;
+        line-height: 1.15;
+        margin-bottom: 0.25rem;
+      }
+      .role {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: #888;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+      }
+      .divider {
+        width: 36px;
+        height: 1.5px;
+        background: #ccc;
+        border: none;
+        margin-bottom: 2rem;
+      }
+      .bio {
+        font-size: 1rem;
+        line-height: 1.85;
+        color: #555;
+        font-weight: 300;
+        margin-bottom: 2.5rem;
+        max-width: 480px;
+      }
+      .links {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+      .links a {
+        font-size: 0.85rem;
+        color: #222;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 2px;
+      }
+      .links a:hover {
+        border-color: #222;
+      }
     </style>
   </head>
   <body>
-    <h1>Halo, saya Syahid Ibrahim, S.Kom — Artist Manager</h1>
-    <p>Selamat datang di website personal saya.</p>
-    <p>Berkarier di industri manajemen artis sejak 1999. Pernah menjabat sebagai Head of Artist Management PT Triwarsana, Direktur Program Sekolah Demokrasi Medco Group, dan saat ini Direktur Utama The Management Asia.
+    <div class="wrap">
+      <nav>
+        <a href="/" class="active">About</a>
+        <a href="/work">Work</a>
+        <a href="/contact">Contact</a>
+      </nav>
 
-Berpengalaman menangani berbagai tokoh dan artis seperti Emha Ainun Nadjib, Joshua Suherman, Helmy Yahya, Tantowi Yahya, Trie Utami, Didik Nini Thowok, Astrid Lea Orchestra, Mo Sidik, Charles Bonar Sirait, Tarakardha, Erwin Yap, dan SNADA.
-
-Dewan Pendiri IMARINDO serta menjabat sebagai Direktur Riset dan Pengembangan.</p>
-    <p>
-      Hubungi saya di 
-      <a href="mailto:email@kamu.com">syahid@themanagement.asia</a>
-    </p>
+      <h1>Syahid Ibrahim</h1>
+      <p class="role">Artist Manager</p>
+      <hr class="divider" />
+      <p class="bio">
+        Berkarier di industri manajemen artis sejak 1999. Pernah menjabat sebagai Head of Artist Management PT Triwarsana, Direktur Program Sekolah Demokrasi Medco Group, dan saat ini Direktur Utama The Management Asia. Berpengalaman menangani berbagai tokoh dan artis seperti Emha Ainun Nadjib, Joshua Suherman, Helmy Yahya, Tantowi Yahya, Trie Utami, Didik Nini Thowok, Astrid Lea Orchestra, Mo Sidik, Charles Bonar Sirait, Tarakardha, Erwin Yap, dan SNADA. Dewan Pendiri IMARINDO serta menjabat sebagai Direktur Riset dan Pengembangan.
+      </p>
+      <div class="links">
+        <a href="https://wa.me/62818697749" target="_blank">Whatsapp</a>
+        <a href="https://instagram.com/themanagement.asia" target="_blank">Instagram</a>
+        <a href="mailto:syahid@themanagement.asia">Email</a>
+      </div>
+    </div>
   </body>
 </html>
