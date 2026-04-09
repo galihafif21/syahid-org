@@ -6,12 +6,12 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://syahid.org/about</loc>
+    <loc>https://syahid.org/tentang</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://syahid.org/contact</loc>
+    <loc>https://syahid.org/kontak</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
